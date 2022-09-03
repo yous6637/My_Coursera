@@ -5,18 +5,18 @@ let ChartOptions = [{option:"1m",value:"60",selected:false},
 export ChartOptions;
 
 
-// export const Signal=()=>{
+export const Signal=()=>{
   
-//   const setIndicatorSignalType =(op)=>{
-//  let nop = ""
-//   op=='buy'? nop='sell':nop='buy'
-//   $('#configIndicatorSignal'+op).css('display','block');
-//   $('#configIndicatorSignal'+nop).css('display','none');
-//   }
-// return(
-// <div class="col-sm-3 col-xs-3" style="padding-top:5px;">
-// <a href="#" onclick="setIndicatorSignalType('sell');" id="configIndicatorSignalbuy"><span class="label label-success" style="font-size:18px">buy</span></a>
-// <a href="#" onclick="setIndicatorSignalType('buy');" id="configIndicatorSignalsell" style="display:none;"><span class="label label-danger" style="font-size:18px;">sell</span></a>
-// </div>
+  const setIndicatorSignalType =(op)=>{
+ let nop = ""
+  op=='buy'? nop='sell':nop='buy'
+  $('#configIndicatorSignal'+op).css('display','block');
+  $('#configIndicatorSignal'+nop).css('display','none');
+  }
+return(
+<div class="col-sm-3 col-xs-3" style="padding-top:5px;">
+<a href="#" onclick="setIndicatorSignalType('sell');" id="configIndicatorSignalbuy"><span class="label label-success" style="font-size:18px">buy</span></a>
+<a href="#" onclick="setIndicatorSignalType('buy');" id="configIndicatorSignalsell" style="display:none;"><span class="label label-danger" style="font-size:18px;">sell</span></a>
+</div>
 
-// )}
+)}
