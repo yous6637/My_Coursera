@@ -30,6 +30,13 @@
         Telegram.WebApp.sendData(data);
         Telegram.WebApp.close();
     });
+ const setIndicatorSignalType =(op)=>{
+ let nop = ""
+  op=='buy'? nop='sell':nop='buy'
+  $('#configIndicatorSignal'+op).css('display','block');
+  $('#configIndicatorSignal'+nop).css('display','none');
+  
+}
 </script>
 <body style="background-color: #ffffff">
 <div class="container">
