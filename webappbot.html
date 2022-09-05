@@ -8,6 +8,10 @@
     <title>python-telegram-bot Example WebApp</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/docs/5.2/scss/mixins/_grid.scss"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
 </head>
 <script type="text/javascript">
     const colorPicker = new iro.ColorPicker('#picker', {
@@ -27,10 +31,101 @@
     });
 </script>
 <body style="background-color: #ffffff">
-<div style="position: absolute; margin-top: 5vh; margin-left: 5vw; height: 90vh; width: 90vw; border-radius: 5vh; background-color: var(--tg-theme-bg-color); box-shadow: 0 0 2vw
- #000000;">
-    <div id="picker"
-         style="display: flex; justify-content: center; align-items: center; height: 100%; width: 100%"></div>
+<div class="container">
+  <form class="form-horizontal" role="form">
+    <fieldset class="">
+      <legend class="text-center modal-title"><h4><strong>Relative Strength Index (RSI)</strong></h4></legend>
+      <div class = "form">
+      <div class="form-group">
+        <label class="col-sm-5 col-xs-5 control-label" for="card-holder-name">Chart periode</label>
+        <div class="col-xs-6 col-sm-5">
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option value="60">1m</option>
+                <option value="300">5m</option>
+                <option value="900">15m</option>
+                <option value="1800">30m</option>
+                <option value="3600">1h</option>
+                <option value="7200">2h</option>
+                <option value="14400" selected>4h (default)</option>
+                <option value="86400">1d</option>
+                <option value="1w">1w</option>
+                <option value="1M">1M</option>
+                
+              </select>
+        </div>
+      </div>
+      <div class="form-group">
+						<label class="col-sm-5 col-xs-5 control-label">Signal</label>
+						<div class="col-sm-3 col-xs-3" style="padding-top:5px;">
+							<a href="#" 
+                
+onclick="setIndicatorSignalType('sell');" id="configIndicatorSignalbuy"><span class="label label-success" style="font-size:18px">buy</span></a>
+								<a href="#" onclick="setIndicatorSignalType('buy');" id="configIndicatorSignalsell" style="display:none;"><span class="label label-danger" style="font-size:18px;">sell</span></a>
+						</div>
+						
+					</div>
+      <div class="form-group">
+        <label class="col-sm-5 col-xs-5 control-label" for="card-number">OHLC</label>
+        <div class="col-xs-6 col-sm-5">
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option value="open">Open</option>
+                <option value="high">High</option>
+                <option value="low">Low</option>
+                <option value="close" selected>Close</option>
+                
+                
+              </select>
+        </div>
+      </div>
+      <div class="form-group">
+        
+        <label class="col-sm-5 col-xs-5 control-label" for="cvv">RSI Periode</label>
+        <div class="col-xs-6 col-sm-5">
+          <input type="number" class="form-control" name="periode" id="cvv" placeholder="14 default"                    value=14 min="1" max="500">
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="col-sm-5 col-xs-5 control-label" for="expiry-month">Signal when value is </label>
+          
+            <div class="col-xs-6 col-sm-5">
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option value="=" selected>Equale</option>
+                <option value=">">Cross over</option>
+                <option value="<">Cross below</option>
+
+                
+              </select>
+            
+          </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-5 col-xs-5 control-label" for="condition">Signal  </label>
+          
+            <div class="col-xs-6 col-sm-5">
+              <select class="form-control col-sm-2" name="expiry-month" id="source2">
+                <option value="value" selected>Value</option>
+                <option value="smrsi">SM_RSI</option>                
+              </select>
+            </div>
+            
+        
+      </div>
+      <div class="form-group">
+        <label class="col-xs-5 col-sm-5 control-label" for="cvv">value</label>
+        <div class="col-sm-5 col-xs-5">
+          <input type="number" class="form-control" name="rsivalue" id="value" placeholder="20">
+        </div>
+      </div>
+        </div>
+      
+      <div class="form-group text-center">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type="button" class="btn btn-success">Pay Now</button>
+        </div>
+      </div>
+        
+    </fieldset>
+  </form>
 </div>
 </body>
 <script type="text/javascript">
