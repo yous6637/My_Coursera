@@ -12,88 +12,15 @@
    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		    <script src="https://yous6637.github.io/My_Coursera/rsiform.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://yous6637.github.io/My_Coursera/rsiform.js"></script>
+<link href="https://yous6637.github.io/My_Coursera/rsistyle.css" rel="stylesheet">
+
 
 	
-	<style>
-	    .dialog {
-  margin: 30px;
-  padding: 30px;
-  border-radius: 5px;
-  background : hsl(255deg 60% 90%);
-}
-
-.modal-title {
-    margin: 0;
-    line-height: 1.42857143;
-  font-family: SofiaProRegular,sans-serif;
-  font-weight: 600!important;
-    font-size: 20px;
-    color: #232368;
-    margin-top: -5px;
-}
-
-h2 {
-    display: block;
-  color:#004ba7;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-.form {
-  margin:10px
-}
-h4 {
-  color :#c9c9c9;
-}
-	</style>
+	
 </head>
-<script type="text/javascript">
-    const colorPicker = new iro.ColorPicker('#picker', {
-        borderColor: "#ffffff",
-        borderWidth: 1,
-        width: Math.round(document.documentElement.clientWidth / 2),
-    });
-    colorPicker.on('color:change', function (color) {
-        document.body.style.background = color.hexString;
-    });
 
-    Telegram.WebApp.ready();
-    Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
-        const data = JSON.stringify({hex: colorPicker.color.hexString, rgb: colorPicker.color.rgb});
-        Telegram.WebApp.sendData(data);
-        Telegram.WebApp.close();
-    });
- const setIndicatorSignalType =(op)=>{
- let nop = ""
-  op=='buy'? nop='sell':nop='buy'
-  $('#configIndicatorSignal'+op).css('display','block');
-  $('#configIndicatorSignal'+nop).css('display','none');
-  
-}
-
-$( "#source2" )
-  .change(function() {
-    var str = "";
-    $( "#source2 option:selected" ).each(function() {
-      str += $( this ).text()=="Value"? "Value":"Periode" + " ";
-    });
-    $( "#condition2" ).text( str );
-  })
-  .trigger( "change" );
-
-const showHideIndicatorDescription =
-  ()=>{
-   $("#editIndicatorDescription").toggle("slow");
- }
-
-  
-}
-</script>
 <body style="background-color: #ffffff">
 <div class="container">
   <form class="form-horizontal" role="form">
