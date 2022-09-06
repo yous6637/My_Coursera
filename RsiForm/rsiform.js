@@ -11,7 +11,7 @@
 
 
  Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
-        const data = JSON.stringify({hex: colorPicker.color.hexString, rgb: colorPicker.color.rgb});
+        const data = JSON.stringify({"chart periode": $("#ChartPeriode").val(),"s1" :$("#ohls").val(),"periode" :$("#periode").val(),"when" :$("#condition").val(),"s2" :$("#sourc2").val(),"val" :$("#val").val()});
         Telegram.WebApp.sendData(data);
         Telegram.WebApp.close();
     });
