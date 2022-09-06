@@ -31,6 +31,7 @@
 	      <div class="form-group">
           <label class="col-sm-5 col-xs-5 control-label" for="cvv"> <h4>Paramaters</h4></label>
         </div>
+		    <!------------------------------------ChartPeriode---------------------------------->
       <div class="form-group">
         <label class="col-sm-5 col-xs-5 control-label" for="card-holder-name">Chart periode</label>
         <div class="col-xs-6 col-sm-5">
@@ -49,6 +50,8 @@
               </select>
         </div>
       </div>
+		    		    <!------------------------------------Signal type---------------------------------->
+
       <div class="form-group">
 	<label class="col-sm-5 col-xs-5 control-label">Signal</label>
         <div class="col-sm-3 col-xs-3" style="padding-top:5px;">
@@ -57,10 +60,13 @@
 	</div>
 						
        </div>
+		    
+		    		    <!------------------------------------Source---------------------------------->
+
       <div class="form-group">
         <label class="col-sm-5 col-xs-5 control-label" for="card-number">OHLC</label>
         <div class="col-xs-6 col-sm-5">
-              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+              <select class="form-control col-sm-2" name="expiry-month" id="ohls">
                 <option value="open">Open</option>
                 <option value="high">High</option>
                 <option value="low">Low</option>
@@ -70,13 +76,17 @@
               </select>
         </div>
       </div>
+		    		    <!------------------------------------RSI Periode---------------------------------->
+
       <div class="form-group">
         
         <label class="col-sm-5 col-xs-5 control-label" for="cvv">RSI Periode</label>
         <div class="col-xs-6 col-sm-5">
-          <input type="number" class="form-control" name="periode" id="cvv" placeholder="14 default" value=14 min="1" max="500">
+          <input type="number" class="form-control" name="periode" id="periode" placeholder="14 default" value=14 min="1" max="500">
         </div>
       </div>
+		    		    <!------------------------------------Condition---------------------------------->
+
 	      <div class="form-group">
           <label class="col-sm-5 col-xs-5 control-label" for="cvv"> <h4>Condition</h4></label>
         </div>
@@ -84,7 +94,7 @@
           <label class="col-sm-5 col-xs-5 control-label" for="expiry-month">Signal when value is </label>
           
             <div class="col-xs-6 col-sm-5">
-              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+              <select class="form-control col-sm-2" name="expiry-month" id="condition">
                 <option value="=" selected>Equale</option>
                 <option value=">">Cross over</option>
                 <option value="<">Cross below</option>
@@ -94,6 +104,9 @@
             
           </div>
       </div>
+		    
+		    		    <!------------------------------------Source 2 ---------------------------------->
+
       <div class="form-group">
         <label class="col-sm-5 col-xs-5 control-label" for="condition">Signal  </label>
           
@@ -104,12 +117,14 @@
               </select>
             </div>
             
+	      		    <!------------------------------------Value---------------------------------->
+
         
       </div>
       <div class="form-group">
         <label class="col-xs-5 col-sm-5 control-label" id="condition2" for="cvv">value</label>
         <div class="col-sm-5 col-xs-6">
-          <input type="number" class="form-control" name="rsivalue" id="value" placeholder="20">
+          <input type="number" class="form-control" name="rsivalue" id="val" placeholder="20">
         </div>
       </div>
         </div>
