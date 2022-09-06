@@ -6,14 +6,15 @@
  colorPicker.on('color:change', function (color) {document.body.style.background = color.hexString;});
 
  Telegram.WebApp.ready();
- Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {const data = JSON.stringify({hex: colorPicker.color.hexString, colorPicker.color.rgb});
+ Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {const data = JSON.stringify({hex: colorPicker.color.hexString
+   ,rgb :colorPicker.color.rgb});
  Telegram.WebApp.sendData(data);
  
- Telegram.WebApp.close();
+ Telegram.WebApp.close();});
     
  const Save = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
- const Cancel = = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
- Telegram.WebApp.showPopup("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]})
+ const Cancel = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
+ Telegram.WebApp.showPopup("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]});
    
 
 
@@ -40,4 +41,3 @@ const showHideIndicatorDescription =
   ()=>{
    $("#editIndicatorDescription").toggle("slow");
  }
-
