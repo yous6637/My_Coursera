@@ -1,24 +1,19 @@
 
 
 
- const colorPicker = new iro.ColorPicker('#picker', {
-        borderColor: "#ffffff",
-        borderWidth: 1,
-        width: Math.round(document.documentElement.clientWidth / 2),
-    });
-    colorPicker.on('color:change', function (color) {
-        document.body.style.background = color.hexString;
-    });
+ const colorPicker = new iro.ColorPicker('#picker', {borderColor: "#ffffff",borderWidth: 1,width: Math.round(document.documentElement.clientWidth / 2)});
 
-    Telegram.WebApp.ready();
-    Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
-        const data = JSON.stringify({hex: colorPicker.color.hexString, rgb: colorPicker.color.rgb});
-        Telegram.WebApp.sendData(data);
-        Telegram.WebApp.close();
-    });
-   const Save = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
-   const Cancel = = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
-   Telegram.WebApp.showPopup("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]})
+ colorPicker.on('color:change', function (color) {document.body.style.background = color.hexString;});
+
+ Telegram.WebApp.ready();
+ Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {const data = JSON.stringify({hex: colorPicker.color.hexString, colorPicker.color.rgb});
+ Telegram.WebApp.sendData(data);
+ 
+ Telegram.WebApp.close();
+    
+ const Save = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
+ const Cancel = = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
+ Telegram.WebApp.showPopup("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]})
    
 
 
@@ -29,7 +24,7 @@ const setIndicatorSignalType =(op)=>{
   $('#configIndicatorSignal'+op).css('display','block');
   $('#configIndicatorSignal'+nop).css('display','none');
   
-}
+};
 
 $( "#source2" )
   .change(function() {
