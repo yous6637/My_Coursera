@@ -12,12 +12,7 @@
  
  Telegram.WebApp.close();});
     
- const Save = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
- const Cancel = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
- Telegram.WebApp.showPopup("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]});
-   
-
-
+ 
 
 const setIndicatorSignalType =(op)=>{
  let nop = ""
