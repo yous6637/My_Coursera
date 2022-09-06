@@ -18,7 +18,8 @@
     });
    const Save = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
    const Cancel = = new Telegram.WebApp.PopupButton({type :"ok",text:"Save"});
-   const Buttons =  Telegram.WebApp.PopupParams("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]})
+   const Buttons =  Telegram.WebApp.showPopup("#teleBot",{title:"Hi","message":"Hi",buttons:[Save,Cancel]})
+   
 
 
 
