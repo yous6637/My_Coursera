@@ -7,7 +7,7 @@
 
  Telegram.WebApp.ready();
 
- Telegram.WebApp.ThemeParams = {bg_color:var(--tg-theme-bg-color)};
+ Telegram.WebApp.ThemeParams = {bg_color:"var(--tg-theme-bg-color)"};
 
  Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
         const data = JSON.stringify({hex: colorPicker.color.hexString, rgb: colorPicker.color.rgb});
