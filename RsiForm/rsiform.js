@@ -18,7 +18,7 @@ const setIndicatorSignalType =()=>{
    $('#buy').toggle();
    $('#sell').toggle();
 };
-function setConditionType(event){
+const setConditionType=(event)=>{
  console.log(event);
     
 };
