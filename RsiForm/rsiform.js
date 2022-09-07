@@ -16,7 +16,7 @@
 
 const setIndicatorSignalType =()=>{ $('#buy').toggle(); $('#sell').toggle();};
 
-$("#source2").change(function(){const text = $("#source2 option:selected").text();console.log(text)})
+$("#source2").change(function(){let text;$("#source2 option:selected").each(function(){text = $(this).text()});console.log(text)})
 
 // $("#source2").change(function () {$("#condition2").text($(this).text())})
 // $( "#source2" )
