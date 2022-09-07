@@ -22,8 +22,8 @@
 const setIndicatorSignalType =(op)=>{
  let nop = ""
   op=='buy'? nop='sell':nop='buy'
-  $('#configIndicatorSignal'+op).css('display','block');
-  $('#configIndicatorSignal'+nop).css('display','none');
+  $(op).css('display','block');
+  $(nop).css('display','none');
   
 };
 
