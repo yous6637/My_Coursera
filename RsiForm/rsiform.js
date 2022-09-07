@@ -24,7 +24,7 @@ const setIndicatorSignalType =()=>{
    $('#sell').toggle();
 };
 
-$("#source2").change((text) =>{$("#conditions2").text(text)})
+$("#source2").change() =>{$("#conditions2").text(($(this).text())})
 // $( "#source2" )
 //   .change(function() {
 //     var str = "";
