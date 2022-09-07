@@ -14,14 +14,10 @@
  TeleBot.close();
     });
 
-const setIndicatorSignalType =()=>{
-   $('#buy').toggle();
-   $('#sell').toggle();
-};
-const setConditionType=(event)=>{
- console.log(event);
-    
-};
+const setIndicatorSignalType =()=>{ $('#buy').toggle(); $('#sell').toggle();};
+
+$("#source2").change(function(){const text = $("#source2 option:selected").text();console.log(text)})
+
 // $("#source2").change(function () {$("#condition2").text($(this).text())})
 // $( "#source2" )
 //   .change(function() {
