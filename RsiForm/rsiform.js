@@ -18,8 +18,11 @@ const setIndicatorSignalType =()=>{
    $('#buy').toggle();
    $('#sell').toggle();
 };
-
-$("#source2").change(function () {$("#condition2").text($(this).text())})
+const setConditionType = (event)=>{
+ console.log(event):
+    
+};
+// $("#source2").change(function () {$("#condition2").text($(this).text())})
 // $( "#source2" )
 //   .change(function() {
 //     var str = "";
