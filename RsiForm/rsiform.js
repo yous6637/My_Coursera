@@ -16,15 +16,8 @@
 
 const setIndicatorSignalType =()=>{ $('#buy').toggle(); $('#sell').toggle();};
 
-// $("#source2").change(function(){let text;$("#source2 option:selected").each(function(){text = $(this).text()});console.log(text)})
 
-// $("#source2").change(function () {$("#condition2").text($(this).text())})
-$( "#source2" ).change(function() {
-    var str = "";
-    $( "#source2 option:selected" ).each(function() {
-      str += $( this ).text()=="Value"? "Value":"Periode" + " ";
-    });
-    $( "#condition2" ).text( str );
-  }).trigger( "change" );
+$("#source2").change(function() { var str = "";$("#source2 option:selected").each(function() {str += $(this).text()=="Value"? "Value":"Periode" + " ";});
+      $("#condition2").text(str);}).trigger( "change" );
 
 const showHideIndicatorDescription = ()=>{$("#editIndicatorDescription").toggle("slow");}
