@@ -7,6 +7,8 @@
 
  console.log(TeleBot.colorScheme);
 
+ $("body").addClass(TeleBot.colorSceme)
+
 
  TeleBot.MainButton.setText('Choose Color').show().onClick(function () {
  const data = JSON.stringify({"chart periode": $("#ChartPeriode").val(),"s1" :$("#ohlc").val(),"periode" :$("#periode").val(),"condition" :$("#condition").val(),"s2" :$("#sourc2").val(),"val" :$("#value").val()});
