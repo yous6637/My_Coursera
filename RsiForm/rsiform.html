@@ -20,12 +20,12 @@
 	
 </head>
 
-<body class="dark" >
+<body>
 <div class="container dark">
   <form class="form-horizontal" role="form">
     <fieldset class="">
-      <legend class="text-center modal-title"><h2><strong>Relative Strength Index (RSI)</strong><button type="button" class="pull-right btn btn-link m-r-15" onclick="showHideIndicatorDescription()" style="margin-top:-9px;">Learn</button></h2></legend>
-     <div id="editIndicatorDescription" style="display: none">RSI is a momentum oscillator. It sets a range from 0 to 100 and assigns values for the oversold and overbought levels, 70 and 30 respectively as default values. Traders can use the RSI to measure price movements in terms of their speed and magnitude of change. It is a widely used and reliable indicator for tracking price changes.<hr></div>
+      <legend class="text-center modal-title-dark"><h2><strong>Relative Strength Index (RSI)</strong><button type="button" class="pull-right btn btn-link m-r-15" onclick="showHideIndicatorDescription()" style="margin-top:-9px;">Learn</button></h2></legend>
+     <div id="editIndicatorDescription" style="display: none;padding-top:10px">RSI is a momentum oscillator. It sets a range from 0 to 100 and assigns values for the oversold and overbought levels, 70 and 30 respectively as default values. Traders can use the RSI to measure price movements in terms of their speed and magnitude of change. It is a widely used and reliable indicator for tracking price changes.<hr></div>
 	    <div class = "form">
 	      <div class="form-group">
           <label class="col-sm-5 col-xs-5 control-label" for="cvv"> <h4>Paramaters</h4></label>
@@ -55,7 +55,7 @@
 	<label class="col-sm-5 col-xs-5 control-label">Signal</label>
         <div class="col-sm-3 col-xs-3" style="padding-top:5px;">
 	 <a href="#" onclick="setIndicatorSignalType('sell');" id="buy"><span class="label label-success" style="font-size:18px">buy</span></a>
-	 <a href="#" onclick="setIndicatorSignalType('buy');" id="sell" style="display:none;"><span class="label label-danger" style="font-size:18px;">sell</span></a>
+	 <a href="#" onclick="setIndicatorSignalType('buy');" id="sell" style="display:none;"><span class="label " style="font-size:18px;background:#ff5b5b">sell</span></a>
 	</div>
 						
        </div>
