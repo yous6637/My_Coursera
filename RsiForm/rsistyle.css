@@ -37,7 +37,7 @@ body {
   font-family: SofiaProRegular,sans-serif;
   font-weight: 600!important;
     font-size: 20px;
-    color : #004ba7";
+    color : var(--h2-color);
     margin-top: -5px;
 }
 
@@ -56,18 +56,6 @@ h2 {
 }
 h4 {
   color :var(--btn-color);
-}
-
-
-
-.modal-title-dark {
-    margin: 0;
-    line-height: 1.42857143;
-    font-family: SofiaProRegular,sans-serif;
-    font-weight: 600!important;
-    font-size: 20px;
-    color : #aab8c5;
-    margin-top: -5px;
 }
 
 .btn-link {
