@@ -189,7 +189,7 @@
         <small>(The window goes fullscreen)</small>
         <button onclick="toggleMainButton(this);">Hide Main Button</button>
         <small>(It hides/shows main button)</small>
-        <button id="btnTime" onclick="sendTime(Date());">Send time</button>
+        <button id="btnTime" onclick="sendTime(10);">Send time</button>
         <small>(The bot will recieve a message with filled <code>web_app_data</code> field)</small>
     </div>
 
@@ -267,7 +267,7 @@
     function sendTime(spam) {
         const repeat = spam ? 10 : 1;
         for (let i = 0; i < repeat; i++) {
-            Telegram.WebApp.sendData(new Date().toString());
+            Telegram.WebApp.sendData(JSON.stringify(new Date()));
         }
     }
 
