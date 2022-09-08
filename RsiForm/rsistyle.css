@@ -1,8 +1,16 @@
 
-.dark {
+
+body{
+--title-color : #232368;
+
+}
+
+
+body.dark {
 
 background: #37404a;
 color : #aab8c5;
+--title-color : #f6f6f6;
 
 
 }
@@ -27,19 +35,21 @@ color : #aab8c5;
   font-family: SofiaProRegular,sans-serif;
   font-weight: 600!important;
     font-size: 20px;
-    color: #232368;
+    color: var(--title-color)
     margin-top: -5px;
 }
 
 h2 {
     display: block;
-  color:#004ba7;
+    color: var(--title-color);
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
 }
+
+
 
 .form {
   margin:10px
