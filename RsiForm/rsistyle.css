@@ -1,26 +1,28 @@
 
 
-body{
---title-color : #232368;
-
-}
-
-
-body.dark {
-
-background: #37404a;
-color : #aab8c5;
---title-color : #f6f6f6;
-
-
-}
-
 
 
 /* .container {
   
   color:#060606;
 } */
+
+body.dark {
+
+background: #37404a;
+color : #aab8c5;
+--h2-color : #f4f4f4;
+--btn-color : #f4f4f4;
+
+
+
+}
+
+body {
+  --h2-color : color:#004ba7;
+  --btn-color :hsl(196deg 61% 43%)
+  
+}
 
 .dialog {
   margin: 30px;
@@ -35,13 +37,13 @@ color : #aab8c5;
   font-family: SofiaProRegular,sans-serif;
   font-weight: 600!important;
     font-size: 20px;
-    color: var(--title-color)
+    color: #232368;
     margin-top: -5px;
 }
 
 h2 {
+    color : var(--h2-color);
     display: block;
-    color: var(--title-color);
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
     margin-inline-start: 0px;
@@ -49,11 +51,28 @@ h2 {
     font-weight: bold;
 }
 
-
-
 .form {
   margin:10px
 }
 h4 {
-  color :#c9c9c9;
+  color :var(--btn-color);
+}
+
+
+
+.modal-title-dark {
+    margin: 0;
+    line-height: 1.42857143;
+    font-family: SofiaProRegular,sans-serif;
+    font-weight: 600!important;
+    font-size: 20px;
+    color : #aab8c5;
+    margin-top: -5px;
+}
+
+.btn-link {
+  color : var(--btn-color)!important;
+  position: absolute;
+  right: 5px;
+  top: 120px;
 }
