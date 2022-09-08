@@ -42,7 +42,7 @@ body {
 }
 
 h2 {
-    color : var(--h2-color);
+    color : var(--h2-color)!important;
     display: block;
     margin-block-start: 1.33em;
 /*     margin-block-end: 1.33em; */
@@ -72,7 +72,7 @@ h4 {
 
 .btn-link {
   color : var(--btn-color)!important;
-  position: absolute;
+  position: revert;
   right: 5px;
   top: 120px;
 }
