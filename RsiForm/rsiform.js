@@ -3,7 +3,6 @@
 
  TelApp.ready();
 
- TelApp.colorScheme="var(--tg-theme-bg-color)";
 
  console.log(TelApp.colorScheme);
 
