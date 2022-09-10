@@ -1,0 +1,30 @@
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+font-family: SofiaProRegular,sans-serif;
+font-weight: 600!important;
+  font-size: 20px;
+  color: #232368;
+  margin-top: -5px
+}
+.row {
+ margin-bottom: 15px;
+ --bs-gutter-x: 0.2rem
+    }
+.close-btn{
+      position:absolute;
+      right:1rem;
+      top:1rem;
+      padding: 0.05rem
+
+    }
+.btn:hover{
+      background:#f2f2f2;
+      color:#030303;
+      --bs-blue;
+    }
+.bi.bi-question-circle::after{
+      position:relative;
+    }
+
+  

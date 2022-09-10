@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!--     <script src="./Mfi.js"></script> -->
+    <style>
+   
+    </style>
+  </head>
+
+
+
+  <body class="p-3 m-0 border-0 bd-example">
+    <!-- Example Code -->
+    
+    <fieldset>
+    <legend class="text-center modal-title"><h2><strong>Money Flow Index (MFI)
+  </strong></h2><button type="button" class="btn" onclick="showDescription()"><i class="bi bi-question-circle">&#xF505</i></button><button type="menu" class="btn close-btn"><i class="bi bi-x-lg"></i></button><hr></legend>
+       <div id="Description" style="display: none;padding-top:10px">RSI is a momentum oscillator. It sets a range from 0 to 100 and assigns values for the oversold and overbought levels, 70 and 30 respectively as default values. Traders can use the RSI to measure price movements in terms of their speed and magnitude of change. It is a widely used and reliable indicator for tracking price changes.</div>
+       <hr>
+    <form class="form-horizontal">
+      <div class="row">
+        <div class="col-5">
+        <label for="Chart" class="col col-form-label">Chart Periode</label>
+        </div>
+
+        <div class="col">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="20"
+            step="1"
+            value="20"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+        <label class="col col-form-label">Signal</label>
+      </div>
+        <div class="col">
+          <a
+            href="#"
+            class="btn btn-success"
+            onclick="setSignal();"
+            id="buy"
+            >Buy</a
+          >
+          <a
+            href="#"
+            class="btn btn-danger"
+            onclick="setSignal();"
+            id="sell"
+            style="display: none"
+            >Sell</a
+          >
+        </div>
+      </div>
+      
+      <div class="row">
+      <div class="col-5">
+        <label for="inputEmail3" class="col col-form-label">MFI Periode</label>
+      </div>
+
+        <div class="col">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="20"
+            step="1"
+            value="20"
+          />
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-5">
+          <label for="inputEmail3" class="col col-form-label">Email</label>
+        </div>
+        <div class="col row">
+          <div class="col-8">
+            <select class="form-control" id="autoSizingSelect">
+              <option value="=" selected>Equale</option>
+              <option value=">">Crossing Up</option>
+              <option value="<">Crossing Down</option>
+            </select>
+          </div>
+          <div class="col-4">
+            <input
+              type="number"
+              class="form-control"
+              placeholder="20"
+              step="1"
+              value="20"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+    </fieldset>
+
+    <!-- End Example Code -->
+  </body>
+</html>
