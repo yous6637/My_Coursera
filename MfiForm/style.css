@@ -1,10 +1,30 @@
+
+body.dark {
+
+background: #37404a;
+color : #aab8c5;
+--h2-color : #f4f4f4;
+--btn-color : #f4f4f4;
+
+
+
+}
+
+body {
+  --h2-color : color:#004ba7;
+  --btn-color :hsl(196deg 61% 43%)
+  
+}
+
+
+
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
 font-family: SofiaProRegular,sans-serif;
 font-weight: 600!important;
   font-size: 20px;
-  color: #232368;
+  color: var(--h2-color);
   margin-top: -5px
 }
 .row {
